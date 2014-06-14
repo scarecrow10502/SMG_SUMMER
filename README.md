@@ -1,4 +1,4 @@
 SMG_SUMMER
 ==========
 
-This is a 2014 summer SMGREPOSITORY
+This is a 2014 summer SMG REPOSITORY
