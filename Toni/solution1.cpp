@@ -1,4 +1,4 @@
-//problem 1 solution
+//problem 1 solution NOT READY
 #include<iostream>
 #include<string.h>
 using namespace std;
@@ -36,7 +36,7 @@ public:
     
     tion, description);
   }
-  //destructors
+  //destructor
   ~book(){
     delete[] author;
     delete[] title;
