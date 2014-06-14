@@ -1,15 +1,17 @@
 //problem 1 solution
 #include<iostream>
+#include<string.h>
 using namespace std;
 class book{
-  
+
   char* author;
   char* title;
   bool is_free;
   int year;
   char* description;
-  
+
 public:
+  //constructors
   book(const char*& author, const char*& title, bool is_free, int year, const char*& description){
     this->author = new char[strlen(author)];
     strcpy(this->author, author);
@@ -20,6 +22,21 @@ public:
     this->description = new char[strlen(description)];
     strcpy(this->description, description);
   }
+  book(char*& author, char*& title, bool is_free, int year, char*& description){
+    this->author = new char[strlen(author)];
+    strcpy(this->author, author);
+    this->title = new char[strlen(title)];
+    strcpy(this->title, title);
+    this->is_free = is_free;
+    this->year = year;
+    this->description = new char[strlen(description)];
+    strcpy(this->descrip
+    
+    
+    
+    tion, description);
+  }
+  //destructors
   ~book(){
     delete[] author;
     delete[] title;
@@ -43,11 +60,11 @@ int main(){
   for(int i = 0; i<book_number; i++)
   {
     cin.ignore();
-    char author[50];
+    char* author = new char[50];
     cin.getline(author, 50);
-    char title[50];
+    char* title = new char[50];
     cin.getline(title, 50);
-    char description[1000];
+    char* description = new char[1000];
     cin.getline(description,1000);
     char available[4];
     cin>>available;
